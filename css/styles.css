@@ -806,6 +806,39 @@ a:is(:hover, :focus) {
 }
 
 @media screen and (min-width: 768px) {
+  .footer-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 72px 24px;
+    margin-left: 92px;
+  }
+
+  .footer-text-container {
+    align-items: start;
+  }
+
+  .footer-paragraph {
+    max-width: 264px;
+  }
+
+  .footer-links-container {
+    align-items: flex-start;
+  }
+
+  .footer-subscribe-container {
+    align-items: flex-start;
+  }
+
+  .footer-form-wrapper {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-subscribe-input {
+    min-width: 264px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -813,7 +846,20 @@ a:is(:hover, :focus) {
     padding: 100px 0;
   }
 
-  .footer-paragraph {
-    max-width: 264px;
+  .footer-wrapper {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 0 0;
+    margin-left: 0;
+  }
+
+  .footer-links-container {
+    margin-left: 120px;
+    gap: 16px;
+  }
+
+  .footer-subscribe-container {
+    margin-left: auto;
+    gap: 16px;
   }
 }
